@@ -4,7 +4,7 @@ metadata:
   name: to-do-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: to-do-app=536146943012.dkr.ecr.ap-northeast-2.amazonaws.com/to-do-app
+    argocd-image-updater.argoproj.io/image-list: to-do-app=703033428126.dkr.ecr.ap-northeast-2.amazonaws.com/to-do-app
     argocd-image-updater.argoproj.io/to-do-app.update-strategy: latest
     argocd-image-updater.argoproj.io/write-back-method: argocd
 spec:

@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - export AWS_ACCOUNT_ID=536146943012
+      - export AWS_ACCOUNT_ID=703033428126
       - export AWS_DEFAULT_REGION=ap-northeast-2
       - export IMAGE_REPO_NAME=to-do-app
       - export IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)

@@ -19,8 +19,8 @@ data:
   registries.conf: |
     registries:
       - name: ECR
-        api_url: "https://536146943012.dkr.ecr.ap-northeast-2.amazonaws.com"
-        prefix: "536146943012.dkr.ecr.ap-northeast-2.amazonaws.com"
+        api_url: "https://703033428126.dkr.ecr.ap-northeast-2.amazonaws.com"
+        prefix: "703033428126.dkr.ecr.ap-northeast-2.amazonaws.com"
         ping: true
         credentials: "ext:/scripts/auth.sh"
         credsexpire: 10h
