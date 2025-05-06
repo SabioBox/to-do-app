@@ -51,7 +51,7 @@ spec:
             name: image-updater-config
       containers:
         - name: updater
-          image: cielciel/argo_image_updater
+          image: cielciel/argocd-image-updater
           imagePullPolicy: Always
           command: ["argocd-image-updater", "run"]
           volumeMounts:
