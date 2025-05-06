@@ -1,5 +1,11 @@
 ---
 apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: argocd-image-updater
+  namespace: argocd
+---
+apiVersion: v1
 kind: ConfigMap
 metadata:
   name: ecr-auth-script
@@ -53,10 +59,12 @@ spec:
         - name: updater
           image: cielciel/argocd-image-updater
           imagePullPolicy: Always
-          command: ["argocd-image-updater", "run"]
+          command: ["/usr/local/bin/argocd-image-updater"]
+          args: ["run"]
           volumeMounts:
             - name: auth-script-vol
-              mountPath: /scripts
+              mountPath: /scripts/auth.sh
+              subPath: auth.sh
             - name: updater-config-vol
               mountPath: /app/config
           env:
