@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: to-do-app
-        image: 027742773794.dkr.ecr.ap-northeast-2.amazonaws.com/to-do-app:1f55772
+        image: 027742773794.dkr.ecr.ap-northeast-2.amazonaws.com/to-do-app:8919b93
         ports:
         - containerPort: 5000
